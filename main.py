@@ -37,6 +37,5 @@ def main(page: ft.Page):
     )
 if __name__ == "__main__":
     # تشغيل كنسخة ويب متوافقة مع سيرفر Render والمنفذ 8000
-    # تم إلغاء flet_desktop ليعمل السيرفر بنجاح
     port = int(os.environ.get("PORT", 8000))
     ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=port)
