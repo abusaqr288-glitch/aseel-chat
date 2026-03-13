@@ -13,6 +13,6 @@ def main(page: ft.Page):
     )
 
 if __name__ == "__main__":
-    # هذا الجزء هو الأهم لعمل السيرفر
-    port = int(os.getenv("PORT", 8080))
-    ft.app(target=main, view=None, port=port, host="0.0.0.0")
+    # ربط المنفذ بالسيرفر بشكل صحيح للويب
+    app_port = int(os.getenv("PORT", 8080))
+    ft.app(target=main, view=None, port=app_port, host="0.0.0.0")
